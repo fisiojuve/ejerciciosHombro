@@ -4,142 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios - Fisiojuve</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fondo general */
+        body {
+            background: linear-gradient(to bottom, #E3F2FD, #B0C4DE);
+            color: #064663;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Contenedor de cada ejercicio */
+        .ejercicio-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Video responsivo */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* Aspect ratio 16:9 */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        /* Título del ejercicio */
+        h2 {
+            font-size: 22px;
+            margin: 15px 0;
+            color: #064663;
+        }
+
+        /* Indicaciones */
+        .indicaciones {
+            text-align: left;
+            padding: 15px;
+            background: #E3F2FD;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .indicaciones p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .objetivo {
+            font-weight: bold;
+            color: #0077B6;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background: #064663;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="contenedor">
-        <header>
-            <h1 id="titulo-video">Ejercicio de empuje y salida</h1>
-        </header>
+    <h1>Ejercicios de Rehabilitación - Fisiojuve</h1>
 
-        <main id="video-container">
-            <!-- Flecha de navegación izquierda -->
-            <button id="prev-video" class="nav-arrow left-arrow">&#9664;</button>
-
-            <!-- Contenedor del video con navegación táctil -->
-            <div class="video-container">
-                <video id="video-player" controls playsinline>
-                    <source id="video-source" src="InOut.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de video.
-                </video>
-            </div>
-
-            <!-- Flecha de navegación derecha -->
-            <button id="next-video" class="nav-arrow right-arrow">&#9654;</button>
-        </main>
-
-        <section id="indicaciones">
-            <h2>📌 Indicaciones Generales</h2>
-            <p class="importante">🛑 Importante: Antes de comenzar, sigue las instrucciones del Dr. o Dra. que lleva tu caso para evitar lesiones y asegurar un progreso adecuado.</p>
-        
-            <div class="ejercicio">
-                <h3>🔹 InOut - Ejercicio de empuje y salida</h3>
-                <p>➡️ Apoya las manos en la pared y empuja los hombros hacia adelante y atrás sin flexionar los codos ni encorvar la espalda.</p>
-                <p class="objetivo">✔ <strong>Objetivo:</strong> Activar el trabajo específico de los hombros.</p>
-            </div>
-        
-            <div class="ejercicio">
-                <h3>🔹 Mancuernas - Ejercicio del nadador</h3>
-                <p>➡️ Acuéstate boca abajo y eleva los brazos en secciones. Si no tienes mancuernas, marca los puntos de elevación y síguelos.</p>
-                <p class="objetivo">✔ <strong>Objetivo:</strong> Asegurar la correcta elevación y fortalecimiento del movimiento de los brazos.</p>
-            </div>
-        
-            <div class="ejercicio">
-                <h3>🔹 ElevacionBanda - Ejercicio de elevación</h3>
-                <p>➡️ Usa una banda elástica (si no tienes, consulta con tu especialista). Eleva el brazo en <strong>90°</strong>, asegurando que la espalda permanezca recta.</p>
-                <p class="objetivo">✔ <strong>Objetivo:</strong> Fortalecer directamente el manguito rotador.</p>
-            </div>
-        
-            <div class="ejercicio">
-                <h3>🔹 RotacionBrazo - Ejercicio de Rotación Manguito</h3>
-                <p>➡️ Realiza una rotación del brazo llevando el puño hacia atrás, sin rebasar la línea del cuerpo. Mantén la espalda recta.</p>
-                <p class="objetivo">✔ <strong>Objetivo:</strong> Mejorar la alineación y estabilidad del hombro.</p>
-            </div>
-        
-            <div class="ejercicio">
-                <h3>🔹 TiroConArco - Ejercicio de Tiro con Arco</h3>
-                <p>➡️ Usa una banda elástica o la que te proporcionamos. Evita sobrecargar el ejercicio y sigue la dosificación indicada por el Dr. o Dra.</p>
-                <p class="objetivo">✔ <strong>Objetivo:</strong> Fortalecer el manguito rotador y la escápula para mejorar la fuerza en movimientos de tracción.</p>
-            </div>
-        
-            <h3 class="consejo">📌 Consejo final:</h3>
-            <ul class="lista-consejos">
-                <li>🔹 Sigue el ritmo adecuado para tu recuperación.</li>
-                <li>🔹 No apresures los ejercicios ni aumentes la resistencia sin indicaciones médicas.</li>
-                <li>🔹 Escucha a tu cuerpo y detente si sientes dolor.</li>
-            </ul>
-        </section> 
-
-        <footer>
-            <p>&copy; 2024 Fisiojuve - Todos los derechos reservados.</p>
-        </footer>
+    <!-- Ejercicio 1 -->
+    <div class="ejercicio-container">
+        <h2>🔹 Ejercicio de Empuje y Salida</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/RyxMfXtG18Q?autoplay=1&mute=1" allowfullscreen></iframe>
+        </div>
+        <div class="indicaciones">
+            <p>➡️ Apoya las manos en la pared y empuja los hombros hacia adelante y atrás sin flexionar los codos ni encorvar la espalda.</p>
+            <p class="objetivo">✔ Objetivo: Activar el trabajo específico de los hombros.</p>
+        </div>
     </div>
 
-    <script>
-        // Lista de videos con sus títulos (las indicaciones NO cambian)
-        const videos = [
-            { src: "InOut.mp4", title: "Ejercicio de empuje y salida" },
-            { src: "Mancuernas.mp4", title: "Ejercicio del nadador" },
-            { src: "ElevacionBanda.mp4", title: "Ejercicio de elevación" },
-            { src: "RotacionBrazo.mp4", title: "Ejercicio de Rotación Manguito" },
-            { src: "ticoConArco.mp4", title: "Ejercicio de Tiro con Arco" }
-        ];
+    <!-- Ejercicio 2 -->
+    <div class="ejercicio-container">
+        <h2>🔹 Ejercicio del Nadador (Mancuernas)</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/fn9itls-E-A?autoplay=1&mute=1" allowfullscreen></iframe>
+        </div>
+        <div class="indicaciones">
+            <p>➡️ Acuéstate boca abajo y eleva los brazos en secciones. Si no tienes mancuernas, marca los puntos de elevación y síguelos.</p>
+            <p class="objetivo">✔ Objetivo: Asegurar la correcta elevación y fortalecimiento del movimiento de los brazos.</p>
+        </div>
+    </div>
 
-        let currentIndex = 0;
+    <!-- Ejercicio 3 -->
+    <div class="ejercicio-container">
+        <h2>🔹 Ejercicio de Elevación con Banda</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/5ncRg_toYf8?autoplay=1&mute=1" allowfullscreen></iframe>
+        </div>
+        <div class="indicaciones">
+            <p>➡️ Usa una banda elástica (si no tienes, consulta con tu especialista). Eleva el brazo en 90°, asegurando que la espalda permanezca recta.</p>
+            <p class="objetivo">✔ Objetivo: Fortalecer directamente el manguito rotador.</p>
+        </div>
+    </div>
 
-        const videoPlayer = document.getElementById("video-player");
-        const videoSource = document.getElementById("video-source");
-        const tituloVideo = document.getElementById("titulo-video");
-        const prevButton = document.getElementById("prev-video");
-        const nextButton = document.getElementById("next-video");
-        const videoContainer = document.getElementById("video-container");
+    <!-- Ejercicio 4 -->
+    <div class="ejercicio-container">
+        <h2>🔹 Ejercicio de Rotación Manguito</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/aP8SVIEquL4?autoplay=1&mute=1" allowfullscreen></iframe>
+        </div>
+        <div class="indicaciones">
+            <p>➡️ Realiza una rotación del brazo llevando el puño hacia atrás, sin rebasar la línea del cuerpo. Mantén la espalda recta.</p>
+            <p class="objetivo">✔ Objetivo: Mejorar la alineación y estabilidad del hombro.</p>
+        </div>
+    </div>
 
-        function loadVideo(index) {
-            if (index >= 0 && index < videos.length) {
-                currentIndex = index;
-                videoSource.src = videos[currentIndex].src;
-                videoPlayer.load();
-                tituloVideo.textContent = videos[currentIndex].title;
-            }
-        }
+    <!-- Ejercicio 5 -->
+    <div class="ejercicio-container">
+        <h2>🔹 Ejercicio de Tiro con Arco</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/fPRScVQef2I?autoplay=1&mute=1" allowfullscreen></iframe>
+        </div>
+        <div class="indicaciones">
+            <p>➡️ Usa una banda elástica o la que te proporcionamos. Evita sobrecargar el ejercicio y sigue la dosificación indicada por el Dr. o Dra.</p>
+            <p class="objetivo">✔ Objetivo: Fortalecer el manguito rotador y la escápula para mejorar la fuerza en movimientos de tracción.</p>
+        </div>
+    </div>
 
-        prevButton.addEventListener("click", () => {
-            if (currentIndex > 0) loadVideo(currentIndex - 1);
-        });
-
-        nextButton.addEventListener("click", () => {
-            if (currentIndex < videos.length - 1) loadVideo(currentIndex + 1);
-        });
-
-        // GESTOS TÁCTILES (Deslizar para cambiar de video)
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        videoContainer.addEventListener("touchstart", (event) => {
-            touchStartX = event.changedTouches[0].screenX;
-        });
-
-        videoContainer.addEventListener("touchend", (event) => {
-            touchEndX = event.changedTouches[0].screenX;
-            handleSwipe();
-        });
-
-        function handleSwipe() {
-            let swipeThreshold = 50; // Mínimo desplazamiento para considerar un swipe
-
-            if (touchStartX - touchEndX > swipeThreshold) {
-                // Swipe a la izquierda (siguiente video)
-                if (currentIndex < videos.length - 1) loadVideo(currentIndex + 1);
-            } else if (touchEndX - touchStartX > swipeThreshold) {
-                // Swipe a la derecha (video anterior)
-                if (currentIndex > 0) loadVideo(currentIndex - 1);
-            }
-        }
-
-        // Cargar el primer video al inicio
-        loadVideo(currentIndex);
-    </script>
+    <footer>
+        <p>&copy; 2024 Fisiojuve - Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
+
