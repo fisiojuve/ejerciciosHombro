@@ -1,0 +1,178 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo general de la página con colores médicos */
+body {
+    background: linear-gradient(to bottom, #E3F2FD, #B0C4DE);
+    color: #064663;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #064663;
+}
+
+/* Contenedor de video con gestos táctiles */
+#video-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    touch-action: pan-y; /* Permite deslizamiento táctil */
+    user-select: none;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 10px;
+}
+
+/* Controles del video */
+video::-webkit-media-controls-download-button {
+    display: none;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+    display: block;
+}
+
+/* Flechas de navegación */
+.nav-arrow {
+    background: rgba(6, 70, 99, 0.8);
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+.nav-arrow:hover {
+    background: rgba(6, 70, 99, 1);
+}
+
+/* Indicaciones */
+#indicaciones {
+    width: 90%;
+    max-width: 720px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#indicaciones h2 {
+    color: #064663;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Advertencia en rojo sutil */
+.importante {
+    color: #d9534f;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background: #ffeaea;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de cada ejercicio */
+.ejercicio {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 5px solid #064663;
+    background: #E3F2FD;
+    border-radius: 5px;
+}
+
+.ejercicio h3 {
+    color: #064663;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.ejercicio p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Resaltado del objetivo */
+.objetivo {
+    font-weight: bold;
+    color: #0077B6;
+}
+
+/* Consejo final */
+.consejo {
+    color: #064663;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.lista-consejos {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.lista-consejos li {
+    font-size: 16px;
+    background: #B0C4DE;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: #064663;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+}
